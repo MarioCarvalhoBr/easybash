@@ -51,7 +51,7 @@ Script para rodar atualizações e limpeza de disco no GNU/Linux automaticamente
 ## 3º - Dar privilégios ao script: 
 Importande para poder remover os arquivos temporários e lixo do sistema após atualizações.
 ```bash
-    $ sudo chmod +x exec.run -R
+    $ sudo chmod +x exec.run
 ```
 
 ## 4º - Executar o script:
