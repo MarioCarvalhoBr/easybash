@@ -7,7 +7,8 @@ Script para rodar atualizações e limpeza de disco no GNU/Linux automaticamente
 #### Comandos usados
     apt
     du
-
+    uname
+    
 ## Configuração
 ### Passo a passo para configurar o script.
 
@@ -19,6 +20,9 @@ Script para rodar atualizações e limpeza de disco no GNU/Linux automaticamente
 ## 2 º - Adicionar o código abaixo:
     Copie e cole o código abaixo no seu arquivo criado e save na pasta de usuário: <strong>/home/usuario</strong>
 ```bash
+    echo 'Dados do sistema:'
+    uname -a
+
     echo 'Atualizando os pacotes do sistema:'
     apt-get update
 

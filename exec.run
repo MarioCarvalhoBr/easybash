@@ -1,3 +1,6 @@
+echo 'Dados do sistema:'
+uname -a
+
 echo 'Atualizando os pacotes do sistema:'
 sudo apt-get update
 
