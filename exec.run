@@ -1,0 +1,28 @@
+echo 'Atualizando os pacotes do sistema:'
+sudo apt-get update
+
+echo 'Atualizando o sistema:'
+sudo apt-get upgrade -y
+
+echo 'Limpando o sistema de arquivos temporários e desnecessários'
+
+echo 'Espaço que os arquivos de pacotes .deb estavam ocupando:'
+sudo du -sh /var/cache/apt/archives
+
+## AUTOREMOVE - remover pacotes que foram instalados automaticamente para satisfazer dependências de outros pacotes e que já não são mais necessários.
+
+sudo apt-get autoremove
+
+## AUTOCLEAN - Limpa o seu repositório local — removendo os arquivos de pacotes (.deb) que não podem mais ser baixados (versões antigas) e são completamente inúteis e obsoletos.
+
+sudo apt-get autoclean
+
+## CLEAN -  Limpando e removendo todos os arquivos .deb (pacotes) contidos nos diretórios — exceto o lock file.
+
+sudo apt-get clean
+
+echo 'Limpeza realizada com sucesso!'
+
+echo 'Espaço que os arquivos de pacotes .deb estão ocupando:'
+sudo du -sh /var/cache/apt/archives
+
