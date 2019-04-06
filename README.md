@@ -63,6 +63,16 @@ Sempre que abrir o terminal, ele já estará na pasta raíz, então, basta execu
 ```bash
     $ ./exec.run
 ```
+
+## 5º - Criando um alias para chamar o script com comando:
+Com isso, vamos criar um comando no bash para sempre que quisermos excecutarmos o script de qualquer lugar do terminal, para isso basta seguir os seguintes passos:
+```bash
+    $ gedit /home/user/.bashrc
+```
+Ao executar o comando acima, insira no final do arquivo aberto a sehuinte linha:<br>
+__alias easybash='sudo sh /home/user/exec.run'__<br>
+Pronto, agora sempre que precisar chamar o script basta digitar no terminal o comando __easybash__
+
 # Desenvolvido por<br>
 Nome: Mário de Araújo Carvalho<br> 
 E-mail: mariodearaujocarvalho@gmail.com<br>
