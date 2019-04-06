@@ -15,62 +15,62 @@ A função do script é fazer o processo de atualização do sistema com limpeza
 ## 1 - Criar o script executável na pasta de usuário:
 Lembrando que pra rodar o script, é bom deixar ele na pasta __/home/usuario__
 ```bash
-    $ gedit exec.run
+$ gedit exec.run
 ```
 ## 2 º - Adicionar o código abaixo:
 Copie e cole o código abaixo no seu arquivo criado e save na pasta de usuário: __/home/usuario__
 ```bash
-    echo 'Dados do sistema:'
-    uname -a
+echo 'Dados do sistema:'
+uname -a
 
-    echo 'Atualizando os pacotes do sistema:'
-    apt-get update
+echo 'Atualizando os pacotes do sistema:'
+apt-get update
 
-    echo 'Atualizando o sistema:'
-    apt-get upgrade -y
+echo 'Atualizando o sistema:'
+apt-get upgrade -y
 
-    echo 'Limpando o sistema de arquivos temporários e desnecessários'
+echo 'Limpando o sistema de arquivos temporários e desnecessários'
 
-    echo 'Espaço que os arquivos de pacotes .deb estavam ocupando:'
-    du -sh /var/cache/apt/archives
+echo 'Espaço que os arquivos de pacotes .deb estavam ocupando:'
+du -sh /var/cache/apt/archives
 
-    ## AUTOREMOVE - remover pacotes que foram instalados automaticamente para satisfazer dependências de outros pacotes e que já não são mais necessários.
+## AUTOREMOVE - remover pacotes que foram instalados automaticamente para satisfazer dependências de outros pacotes e que já não são mais necessários.
 
-    apt-get autoremove -y
+apt-get autoremove -y
 
-    ## AUTOCLEAN - Limpa o seu repositório local — removendo os arquivos de pacotes (.deb) que não podem mais ser baixados (versões antigas) e são completamente inúteis e obsoletos.
+## AUTOCLEAN - Limpa o seu repositório local — removendo os arquivos de pacotes (.deb) que não podem mais ser baixados (versões antigas) e são completamente inúteis e obsoletos.
 
-    apt-get autoclean -y
+apt-get autoclean -y
 
-    ## CLEAN -  Limpando e removendo todos os arquivos .deb (pacotes) contidos nos diretórios — exceto o lock file.
+## CLEAN -  Limpando e removendo todos os arquivos .deb (pacotes) contidos nos diretórios — exceto o lock file.
 
-    apt-get clean -y
+apt-get clean -y
 
-    echo 'Limpeza realizada com sucesso!'
+echo 'Limpeza realizada com sucesso!'
 
-    echo 'Espaço que os arquivos de pacotes .deb estão ocupando:'
-    du -sh /var/cache/apt/archives
+echo 'Espaço que os arquivos de pacotes .deb estão ocupando:'
+du -sh /var/cache/apt/archives
 
 ```
 ## 3º - Dar privilégios ao script: 
 Importande para poder remover os arquivos temporários e lixo do sistema após atualizações.
 ```bash
-    $ chmod +x exec.run
+$ chmod +x exec.run
 ```
 
 ## 4º - Executar o script:
 Sempre que abrir o terminal, ele já estará na pasta raíz, então, basta executar com privilégios de administrador (sudo):
 ```bash
-    $ ./exec.run
+$ ./exec.run
 ```
 
 ## 5º - Criando um alias para chamar o script com comando:
 Com isso, vamos criar um comando no bash para sempre que quisermos excecutarmos o script de qualquer lugar do terminal, para isso basta seguir os seguintes passos:
 ```bash
-    $ gedit /home/user/.bashrc
+$ gedit /home/usuario/.bashrc
 ```
 Ao executar o comando acima, insira no final do arquivo aberto a sehuinte linha:<br>
-__alias easybash='sudo sh /home/user/exec.run'__<br>
+__alias easybash='sudo sh /home/usuario/exec.run'__<br>
 Pronto, agora sempre que precisar chamar o script basta digitar no terminal o comando __easybash__
 
 # Desenvolvido por<br>
