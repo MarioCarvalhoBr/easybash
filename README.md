@@ -2,7 +2,7 @@
 Script para rodar atualizações e limpeza de disco no GNU/Linux automaticamente.
 
 #### Descrição
-    A função do script é fazer o processo de atualização do sistema com limpeza de arquivos temporários e lixos, sem dar muitos comandos.
+A função do script é fazer o processo de atualização do sistema com limpeza de arquivos temporários e lixos, sem dar muitos comandos.
 
 #### Comandos usados
     apt
@@ -13,12 +13,12 @@ Script para rodar atualizações e limpeza de disco no GNU/Linux automaticamente
 ### Passo a passo para configurar o script.
 
 ## 1 - Criar o script executável na pasta de usuário:
-    Lembrando que pra rodar o script, é bom deixar ele na pasta <strong>/home/usuario</strong>
+Lembrando que pra rodar o script, é bom deixar ele na pasta __/home/usuario__
 ```bash
     $ gedit exec.run
 ```
 ## 2 º - Adicionar o código abaixo:
-    Copie e cole o código abaixo no seu arquivo criado e save na pasta de usuário: <strong>/home/usuario</strong>
+Copie e cole o código abaixo no seu arquivo criado e save na pasta de usuário: __/home/usuario__
 ```bash
     echo 'Dados do sistema:'
     uname -a
