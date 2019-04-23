@@ -20,36 +20,50 @@ $ gedit exec.run
 ## 2 º - Adicionar o código abaixo:
 Copie e cole o código abaixo no seu arquivo criado e save na pasta de usuário: __/home/usuario__
 ```bash
+echo '------------------------------------------------------------------------'
+echo '  ______                ____            _     '
+echo ' |  ____|              |  _ \          | |    '
+echo ' | |__   __ _ ___ _   _| |_) | __ _ ___| |__  '
+echo ' |  __| / _` / __| | | |  _ < / _` / __| |_ \ '
+echo ' | |___| (_| \__ \ |_| | |_) | (_| \__ \ | | |'
+echo ' |______\__,_|___/\__, |____/ \__,_|___/_| |_|'
+echo '                   __/ |                      '
+echo '                  |___/                       '
+echo '------------------------------------------------------------------------'
 echo 'Dados do sistema:'
 uname -a
+echo '------------------------------------------------------------------------'
 
 echo 'Atualizando os pacotes do sistema:'
 apt-get update
+echo '------------------------------------------------------------------------'
 
 echo 'Atualizando o sistema:'
 apt-get upgrade -y
+echo '------------------------------------------------------------------------'
 
 echo 'Limpando o sistema de arquivos temporários e desnecessários'
-
+echo '------------------------------------------------------------------------'
 echo 'Espaço que os arquivos de pacotes .deb estavam ocupando:'
 du -sh /var/cache/apt/archives
-
+echo '------------------------------------------------------------------------'
 ## AUTOREMOVE - remover pacotes que foram instalados automaticamente para satisfazer dependências de outros pacotes e que já não são mais necessários.
 
 apt-get autoremove -y
-
+echo '------------------------------------------------------------------------'
 ## AUTOCLEAN - Limpa o seu repositório local — removendo os arquivos de pacotes (.deb) que não podem mais ser baixados (versões antigas) e são completamente inúteis e obsoletos.
 
 apt-get autoclean -y
-
+echo '------------------------------------------------------------------------'
 ## CLEAN -  Limpando e removendo todos os arquivos .deb (pacotes) contidos nos diretórios — exceto o lock file.
 
 apt-get clean -y
-
+echo '------------------------------------------------------------------------'
 echo 'Limpeza realizada com sucesso!'
-
+echo '------------------------------------------------------------------------'
 echo 'Espaço que os arquivos de pacotes .deb estão ocupando:'
 du -sh /var/cache/apt/archives
+echo '------------------------------------------------------------------------'
 
 ```
 ## 3º - Dar privilégios ao script: 
@@ -69,6 +83,8 @@ Com isso, vamos criar um comando no bash para sempre que quisermos excecutarmos 
 ```bash
 $ gedit /home/usuario/.bashrc
 ```
+OBS: Lembre-se de mudar o caminho para o seu usuário.
+
 Ao executar o comando acima, insira no final do arquivo aberto a sehuinte linha:<br>
 __alias easybash='sudo sh /home/usuario/exec.run'__<br>
 Pronto, agora sempre que precisar chamar o script basta digitar no terminal o comando __easybash__
