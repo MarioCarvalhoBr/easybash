@@ -1,3 +1,4 @@
+#!/bin/sh
 echo '------------------------------------------------------------------------'
 echo '  ______                ____            _     '
 echo ' |  ____|              |  _ \          | |    '
@@ -13,32 +14,32 @@ uname -a
 echo '------------------------------------------------------------------------'
 
 echo 'Atualizando os pacotes do sistema:'
-apt-get update
+sudo apt-get update
 echo '------------------------------------------------------------------------'
 
 echo 'Atualizando o sistema:'
-apt-get upgrade -y
+sudo apt-get upgrade -y
 echo '------------------------------------------------------------------------'
 
 echo 'Limpando o sistema de arquivos temporários e desnecessários'
 echo '------------------------------------------------------------------------'
 echo 'Espaço que os arquivos de pacotes .deb estavam ocupando:'
-du -sh /var/cache/apt/archives
+sudo du -sh /var/cache/apt/archives
 echo '------------------------------------------------------------------------'
 ## AUTOREMOVE - remover pacotes que foram instalados automaticamente para satisfazer dependências de outros pacotes e que já não são mais necessários.
 
-apt-get autoremove -y
+sudo apt-get autoremove -y
 echo '------------------------------------------------------------------------'
 ## AUTOCLEAN - Limpa o seu repositório local — removendo os arquivos de pacotes (.deb) que não podem mais ser baixados (versões antigas) e são completamente inúteis e obsoletos.
 
-apt-get autoclean -y
+sudo apt-get autoclean -y
 echo '------------------------------------------------------------------------'
 ## CLEAN -  Limpando e removendo todos os arquivos .deb (pacotes) contidos nos diretórios — exceto o lock file.
 
-apt-get clean -y
+sudo apt-get clean -y
 echo '------------------------------------------------------------------------'
 echo 'Limpeza realizada com sucesso!'
 echo '------------------------------------------------------------------------'
 echo 'Espaço que os arquivos de pacotes .deb estão ocupando:'
-du -sh /var/cache/apt/archives
+sudo du -sh /var/cache/apt/archives
 echo '------------------------------------------------------------------------'
