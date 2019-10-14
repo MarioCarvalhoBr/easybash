@@ -1,8 +1,8 @@
 [Desktop Entry]
 Name=EasyBash
-Icon=/opt/icon.png
+Icon=/usr/share/applications/easybash/icon.png
 Type=Application
 Categories=GNOME;GTK;Utility;TextEditor;
 Exec=easybash
 StartupNotify=false
-Terminal=false
+Terminal=true

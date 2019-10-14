@@ -3,9 +3,9 @@
 Script para rodar atualizações e limpeza de disco no GNU/Linux automaticamente.
 
 #### Versão:
-0.0.1
+0.0.3
 #### MD5
-e6be95fad7f507df26a5f2fe2cac693c
+52d169d6677a8c82aac8ea9b8391557c
 
 #### Motivação
 A função do script é fazer o processo de atualização do sistema com limpeza de arquivos temporários e lixos, sem dar muitos comandos.
