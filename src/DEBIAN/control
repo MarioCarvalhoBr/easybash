@@ -1,0 +1,15 @@
+Package:easybash
+Version: 0.1
+Priority:
+Architecture: all
+Essential:
+Depends:
+Pre-depends:
+Suggests:
+Installed-Size:
+Maintainer: Mário de Arajúo Carvalho
+Conflicts:
+Replaces:
+Provides:
+Description: Script para rodar atualizações e limpeza de disco no GNU/Linux automaticamente.
+

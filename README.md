@@ -79,6 +79,24 @@ Sempre que abrir o terminal, ele já estará na pasta dos binários do usuário,
 $ easybash
 ```
 
+# Extra
+Caso não queira cnfigurar o script, você pode optar por instalar o seu pacote __.deb__
+
+## Baixando o pacote
+```bash
+$ wget https://github.com/MarioDeAraujoCarvalho/easy-bash-linux-update-upgrade-cleaning/blob/master/bin/easybash.0.1.deb
+```
+## Instalando o pacote
+
+```bash
+$ sudo dpkg -i easybash.0.1.deb
+```
+
+## Removendo o pacote
+```bash
+$ sudo apt-get remove easybash
+```
+
 # Desenvolvido por<br>
 Nome: Mário de Araújo Carvalho<br> 
 E-mail: mariodearaujocarvalho@gmail.com<br>
