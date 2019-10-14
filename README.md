@@ -1,7 +1,11 @@
 # EasyBash
+#### Descrição:
 Script para rodar atualizações e limpeza de disco no GNU/Linux automaticamente.
 
-#### Descrição
+#### Versão:
+0.0.1
+
+#### Motivação
 A função do script é fazer o processo de atualização do sistema com limpeza de arquivos temporários e lixos, sem dar muitos comandos.
 
 #### Comandos usados
@@ -13,7 +17,7 @@ Caso não queira cnfigurar o script, você pode optar por instalar o seu pacote 
 
 ## Baixando o pacote
 ```bash
-$ wget https://github.com/MarioDeAraujoCarvalho/easy-bash-linux-update-upgrade-cleaning/blob/master/bin/easybash.0.1.deb
+$ wget https://github.com/MarioDeAraujoCarvalho/easybash/blob/master/bin/easybash.0.1.deb
 ```
 ## Instalando o pacote
 
