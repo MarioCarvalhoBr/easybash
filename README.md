@@ -8,9 +8,31 @@ A função do script é fazer o processo de atualização do sistema com limpeza
     apt
     du
     uname
+# Instalando o pacote __.deb__
+Caso não queira cnfigurar o script, você pode optar por instalar o seu pacote __.deb__
+
+## Baixando o pacote
+```bash
+$ wget https://github.com/MarioDeAraujoCarvalho/easy-bash-linux-update-upgrade-cleaning/blob/master/bin/easybash.0.1.deb
+```
+## Instalando o pacote
+
+```bash
+$ sudo dpkg -i easybash.0.1.deb
+```
+## Executando o pacote
+
+```bash
+$ easybash
+```
+
+## Caso deseje remover o pacote
+```bash
+$ sudo apt-get remove easybash
+```
+
     
-## Configuração
-### Passo a passo para configurar o script.
+# Configuração passo a passo do script.
 
 ## 1 - Criar o script executável na pasta de usuário:
 Lembrando que pra rodar o script, é bom deixar ele na pasta __/usr/bin__.
@@ -77,24 +99,6 @@ $ sudo chmod +x /usr/bin/easybash
 Sempre que abrir o terminal, ele já estará na pasta dos binários do usuário, então, basta executar:
 ```bash
 $ easybash
-```
-
-# Extra
-Caso não queira cnfigurar o script, você pode optar por instalar o seu pacote __.deb__
-
-## Baixando o pacote
-```bash
-$ wget https://github.com/MarioDeAraujoCarvalho/easy-bash-linux-update-upgrade-cleaning/blob/master/bin/easybash.0.1.deb
-```
-## Instalando o pacote
-
-```bash
-$ sudo dpkg -i easybash.0.1.deb
-```
-
-## Removendo o pacote
-```bash
-$ sudo apt-get remove easybash
 ```
 
 # Desenvolvido por<br>
