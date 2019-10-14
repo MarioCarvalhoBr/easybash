@@ -19,7 +19,7 @@ Caso não queira cnfigurar o script, você pode optar por instalar o seu pacote 
 
 ## Baixando o pacote
 ```bash
-$ wget https://github.com/MarioDeAraujoCarvalho/easybash/blob/master/bin/easybash.0.1.deb
+$ wget https://github.com/MarioDeAraujoCarvalho/easybash/blob/master/bin/easybash.deb
 ```
 ## Instalando o pacote
 
