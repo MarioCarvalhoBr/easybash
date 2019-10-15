@@ -24,7 +24,7 @@ $ wget https://github.com/MarioDeAraujoCarvalho/easybash/blob/master/bin/easybas
 ## Instalando o pacote
 
 ```bash
-$ sudo dpkg -i easybash.0.1.deb
+$ sudo dpkg -i easybash.deb
 ```
 ## Executando o pacote
 
